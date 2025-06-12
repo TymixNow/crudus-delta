@@ -1,25 +1,30 @@
 #pragma once
+#include <vector>
 #include "math_fix.hpp"
 namespace Synth
 {
-    #include <vector>
     using namespace std;
-    template <typename T>
+    template <class T>
     class wave
     {
     private:
-        std::vector<T> data;
+        vector<T> data;
     public:
-        wave  (std::vector<T> d) {data = d;}
-        wave (int x) {data = std::vector(x)}
-        ~wave () {}
-        T operator [](T i) 
+        wave(void) { data = {}; };
+        wave(vector<T> d) { data = d; };
+        wave(int x) { data = vector<T>(x); };
+        ~wave() {};
+        T& operator[](int i)
         {
-            return data[mod(i, data.size())];
+            return data[Mathfix::mod(i, (int)data.size())];
         }
-        int length
+        int size()
         {
             return data.size();
+        }
+        vector<T> get()
+        {
+            return data;
         }
     };
 } // namespace Synth

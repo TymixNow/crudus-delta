@@ -44,5 +44,14 @@
     <ClInclude Include="integral_bass.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="wave_import.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="envelope.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Music.txt" />
   </ItemGroup>
 </Project>

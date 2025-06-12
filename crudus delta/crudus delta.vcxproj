@@ -143,13 +143,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="communicator.hpp" />
+    <ClInclude Include="envelope.hpp" />
     <ClInclude Include="freqmod.hpp" />
     <ClInclude Include="freq_gen.hpp" />
     <ClInclude Include="integral_bass.hpp" />
     <ClInclude Include="math_fix.hpp" />
     <ClInclude Include="wave.hpp" />
     <ClInclude Include="waveformer.hpp" />
+    <ClInclude Include="wave_import.hpp" />
     <ClInclude Include="wavstream.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Music.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

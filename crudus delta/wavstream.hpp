@@ -1,6 +1,4 @@
-#ifndef WAV_STREAM_HPP
-#define WAV_STREAM_HPP
-
+#pragma once
 #include <fstream>
 #include <sstream>
 #include <vector>
@@ -28,7 +26,7 @@ namespace WavWrapper
         T current = number;
         for (short i = 0; i < bytes; i++)
         {
-            out.push_back(current & 0xff)
+            out.push_back(current & 0xff);
             current >>= 8;
         }
         return out;
@@ -115,4 +113,3 @@ namespace WavWrapper
     {
     }
 } // namespace WavWrapper
-#endif
